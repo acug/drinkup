@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <link href="css/reset.css" rel="stylesheet" />
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="shortcut icon" href="css/favicon.png" />
+    <link rel="apple-touch-icon" href="css/apple-touch-icon.png" />
+    <!-- Code Prettifier: -->
+<link href="css/highlight.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+    <link href="css/style.css" rel="stylesheet" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,800italic,300,400,800' rel='stylesheet' type='text/css'>    
+
+
+  </head>
+
+  <body>
+  <div class="fallback-message">
+  <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+  <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+  </div>
+    <div id="impress">
+    <div class='step' >
+    
+<h1>Drinkup #1</h1>
+
+<h2>Clojure开发流程</h2>
+</div>
+      <div class='step' >
+    
+<h2>ACUG (Alibaba Clojure User Group)</h2>
+
+<p>余乐 (行业-家居小商品)</p>
+</div>
+      <div class='step' >
+    
+<h1>clojure特点</h1>
+
+<ul>
+<li> 动态类型</li>
+<li> 不可变数据结构</li>
+<li> Lisp风格</li>
+<li> 基于JVM</li>
+<li> 还有什么?</li>
+</ul>
+</div>
+      <div class='step' >
+    
+<h1>rapid development</h1>
+
+<ul>
+<li> 基于REPL (Read Eval Print Loop)</li>
+<li> Lein</li>
+<li> IDE (emacs/vim/eclipse/intellij ...)</li>
+</ul>
+</div>
+      <div class='step' >
+    
+<h1>例子</h1>
+
+<h2>Raiseup</h2>
+
+<p><a href="https://github.com/weejulius/raiseup">https://github.com/weejulius/raiseup</a></p>
+
+<ul>
+<li> Host on Open shift (PAAS)</li>
+<li> 目的是实践clojure,cqrs,以及event sourcing</li>
+<li> 一个简单的时间管理,类似<a href="http://todomvc.com/architecture-examples/angularjs/">http://todomvc.com/architecture-examples/angularjs/</a></li>
+</ul>
+
+<p>以emacs做演示</p>
+</div>
+      <div class='step' >
+    
+<h1>项目结构</h1>
+
+<p>基于lein,和maven项目结构大致一样,略有区别</p>
+
+<p>参考:　tree -d -L 2</p>
+</div>
+      <div class='step' >
+    
+<h1>Lein的使用</h1>
+
+<ul>
+<li> 安装　<a href="https://github.com/technomancy/leiningen?source=c">https://github.com/technomancy/leiningen?source=c</a></li>
+<li> 基本使用
+
+<ul>
+<li> lein new 新建一个项目</li>
+<li> lein test</li>
+<li> lein repl</li>
+<li> lein run</li>
+</ul></li>
+<li> 配置
+
+<ul>
+<li>profile.clj</li>
+<li>project.clj 项目的配置 例子 <a href="https://github.com/technomancy/leiningen/blob/stable/sample.project.clj">https://github.com/technomancy/leiningen/blob/stable/sample.project.clj</a></li>
+</ul></li>
+</ul>
+</div>
+      <div class='step' >
+    
+<h1>常用库介绍</h1>
+</div>
+      <div class='step' >
+    
+<h1>测试</h1>
+
+<ul>
+<li> clojure.test</li>
+<li> midje (目前的使用)</li>
+<li> speclj (偏向bdd风格)</li>
+</ul>
+</div>
+      <div class='step' >
+    
+<h1>运行</h1>
+
+<h2>执行方式一般有两种,自动和手动</h2>
+
+<ul>
+<li>自动方式 : lein midje :autotest</li>
+<li>手动方式 : 手动加载代码到repl 
+<a href="https://github.com/marick/Midje/wiki/Repl-tools">https://github.com/marick/Midje/wiki/Repl-tools</a>
+<a href="https://github.com/marick/Midje/wiki/What%27s-new-in-midje-1.6">https://github.com/marick/Midje/wiki/What%27s-new-in-midje-1.6</a></li>
+</ul>
+</div>
+      <div class='step' >
+    
+<h1>调试</h1>
+
+<ul>
+<li> print
+
+<ul>
+<li> <a href="https://github.com/AlexBaranosky/print-foo">https://github.com/AlexBaranosky/print-foo</a></li>
+</ul></li>
+<li> debugger
+
+<ul>
+<li> 尝试ritz</li>
+</ul></li>
+</ul>
+</div>
+      <div class='step' >
+    
+<h1>部署</h1>
+
+<ul>
+<li> lein uberjar</li>
+<li> lein deploy clojars</li>
+</ul>
+</div>
+      <div class='step' >
+    
+<ul>
+<li><a href="https://github.com/organizations/acug">https://github.com/organizations/acug</a></li>
+<li><a href="https://github.com/weejulius">https://github.com/weejulius</a></li>
+</ul>
+</div>
+      <div class='step' >
+    
+<h1>谢谢!!!</h1>
+</div>
+      <div class='step' >
+    
+      </div>
+    <script src="js/impress.js"></script>
+    <script>impress().init();</script>
+  </body>
+</html>
+    
